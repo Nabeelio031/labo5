@@ -1,0 +1,46 @@
+#conteneur {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 75px);
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+    max-width: 400px;
+    margin: auto;
+   
+}
+
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header,
+main,
+nav,
+aside,
+footer {
+    background-color: orange;
+    padding: 30px;
+}

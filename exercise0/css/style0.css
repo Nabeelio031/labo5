@@ -1,0 +1,55 @@
+h1{
+    color: white;
+    text-align: center;
+}
+
+#conteneur1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px;
+    height: 100px;
+}
+
+#conteneur2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    margin: 100px;
+    height: 100px;
+}
+
+#conteneur3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    margin: 100px;
+    height: 125px;
+    grid-gap: 2px;
+}
+
+
+
+#conteneur1 div,
+#conteneur2 div,
+#conteneur3 div {
+    padding-top: 6px;
+    text-align: center;
+    border: black solid 1px;
+}
+
+#conteneur1 div:nth-child(odd),
+#conteneur2 div:nth-child(odd),
+#conteneur3 div:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+#conteneur1 div:nth-child(even),
+#conteneur2 div:nth-child(even),
+#conteneur3 div:nth-child(even) {
+    background-color: orange;
+    color: white;
+}
+
+body{
+    background-color:#5D3FD3;
+}
